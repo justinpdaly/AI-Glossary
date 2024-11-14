@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  #app {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  h1 {
+    color: #3366cc;
+    font-weight: 700;
+  }
+  
+  /* Search Bar Styles */
+  input[type="text"] {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 90%;
+    margin-top: 1em;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #3366cc;
+    box-shadow: 0px 4px 12px rgba(51, 102, 204, 0.3);
+  }
+  
+  /* Glossary Term List Styles */
+  #terms-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+  
+  #terms-list li {
+    padding: 1em;
+    margin: 0.5em 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  #terms-list li:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Collapsible Term Titles */
+  .term-title {
+    cursor: pointer;
+    color: #3366cc;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .term-title:hover {
+    color: #244a80;
+  }
+  
+  /* Collapsible Definition Styling */
+  .term-definition {
+    padding-top: 0.5em;
+    color: #555;
+    display: none; /* Start hidden */
+  }
+  
